@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ACSUB</string>
+
+    <string name="titulo_activity">API de Localidades</string>
+    <string name="subtitulo_activity">Digite Nome do Distrito que deseja pesquisar:</string>
+    <string name="botao_pesquisa_activity">Realizar Pesquisa</string>
+    <string name="dados_activity">Informações referentes a esse Distrito:</string>
+    <string name="titulo_segunda_tela_activity">Veja Aqui:</string>
+
+    <string name="Nome">Nome do Distrito:</string>
+    <string name="erro">ERRO:</string>
+    <string name="txt_sucesso">Pesquisa Realizada com sucesso!</string>
+    <string name="txt_invisivel">invisivel</string>
+</resources>

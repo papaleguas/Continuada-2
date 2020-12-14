@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/primeiro_texto"
+        style="@style/titulo_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_activity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/segundo_texto"
+        style="@style/subtitulo_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitulo_activity"
+        app:layout_constraintBottom_toBottomOf="@id/primeiro_texto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/segundo_texto"
+        tools:layout_editor_absoluteX="56dp">
+
+    <LinearLayout
+        android:id="@+id/ll_conteudo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/et_style"
+                android:hint="@string/Nome"
+                android:id="@+id/primeiro_campo"
+                app:layout_constraintBottom_toBottomOf="@id/segundo_texto"
+                android:inputType="number"
+                />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/botao_pesquisa"
+        style="@style/botao_style"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/botao_pesquisa_activity"
+        android:onClick="verDadosNaTela2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scroll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
